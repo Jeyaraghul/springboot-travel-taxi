@@ -8,8 +8,7 @@ ENV DURL=jdbc:postgresql://localhost:5432/postgres
 
 ENV DUSR=postgres
 
-ENV DPASSWD=postgres
-
+ENV DPASSWD=Admin@123
 EXPOSE 8081 
 
 CMD ["java", "-jar", "app.jar","--port=${PORT}","--url=${DURL}","--usr=${DUSR}","--passwd=${DPASSWD}"]
