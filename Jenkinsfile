@@ -1,4 +1,4 @@
-#! /usr/bin/env groovy
+ #! /usr/bin/env groovy
 
 pipeline {
 
@@ -32,7 +32,7 @@ pipeline {
 
         }
       }
-    }
+    }}}
     stage('Deploy') {
       steps {
         echo 'Deploying....'
@@ -53,7 +53,7 @@ pipeline {
         }
       }
     }
-  }
-        }
+  }}}}
 }
-    }
+
+
