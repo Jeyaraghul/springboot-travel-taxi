@@ -28,7 +28,7 @@ public class AvailabilityCheck {
             // TaxiDriverDetails datas = data.indexOf(0);
             return new ResponseEntity<TaxiDriverDetails>(data.get(0), HttpStatus.OK);
         } catch (Exception e) {
-            // TODO: handle exception
+            
             return null;
         }
     }
