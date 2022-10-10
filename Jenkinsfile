@@ -28,7 +28,7 @@ pipeline {
     if(!buildConfigExists){ 
       openshift.newBuild("--name=taxi", "--docker-image=registry.redhat.io/jboss-eap-7/eap74-openjdk8-openshift-rhel7", "--binary") 
     } 
-    openshift.selector("bc", "taxi").startBuild("--from-file=target/staxi-booking-0.0.1-SNAPSHOT.jar", "--follow")
+    openshift.selector("bc", "taxi").startBuild("--from-file=target/taxi-booking-0.0.1-SNAPSHOT.jar", "--follow")
 
         }
       }
