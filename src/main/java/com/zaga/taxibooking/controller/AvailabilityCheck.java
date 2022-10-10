@@ -19,6 +19,11 @@ public class AvailabilityCheck {
 
     @Autowired
     private DriverRepo repo;
+    
+        @PostMapping("/hello")
+    public void hello() {
+        return "Hello_world"
+    }
 
     @PostMapping("/avail")
     public ResponseEntity<?> getAvailability(@RequestBody PassengerDetails passenger) {
